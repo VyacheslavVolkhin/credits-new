@@ -20,6 +20,7 @@ $(document).ready(function(){
 	  return this;
 	};
 
+
     //swipebox
     $('[data-swipebox]').swipebox();
 
