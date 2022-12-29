@@ -3021,6 +3021,12 @@ body {
   max-width: 840px;
   max-width: 84rem;
 }
+.main-top-box .main-actions-wrap,
+.main-top-box .main-buttons-wrap {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .main-top-box .title-wrap {
   margin-bottom: 50px;
   margin-bottom: 5rem;
@@ -3589,6 +3595,12 @@ body {
     padding: 0;
     margin-bottom: 4rem;
     max-width: inherit;
+  }
+  .main-top-box .main-actions-wrap,
+  .main-top-box .main-buttons-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tiles-payments-box .item-wrap {
     width: 100%;
