@@ -19,6 +19,8 @@ $(document).ready(function(){
 	  });
 	  return this;
 	};
+    
+    
 
 
     //swipebox
@@ -26,7 +28,7 @@ $(document).ready(function(){
 
 
     if (!!$('.header').offset()) {
-        var stickyTop = $('.header').offset().top;
+        var stickyTop = $('.wrap').offset().top + 700;
         $(window).scroll(function () {
             var windowTop = $(window).scrollTop();
             if (stickyTop < windowTop) {

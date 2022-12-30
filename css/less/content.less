@@ -38,6 +38,9 @@
         margin-bottom: 12.8rem;
         position: relative;
         z-index: 3;
+        .title-gradient {
+            background-image: linear-gradient(93.38deg, #889BFF 15.67%, #4D69FF 79.2%);
+        }
     }
     .box-inner-wrap {
         display: flex;
@@ -161,6 +164,9 @@
         padding: 0 6.4rem 0 2rem;
         max-width: calc(100% - 37.2rem);
     }
+    .main-title-wrap {
+        
+    }
     .box-inner-wrap {
         max-width: 980px;
         margin: 0 auto;
@@ -169,6 +175,9 @@
     }
     .h2-title {
         margin-bottom: 0;
+        .title-gradient {
+            background-image: linear-gradient(159.85deg, #059DB7 0%, #3BD7BD 100%);
+        }
     }
 }
 .main-card-head-box, .main-payment-head-box {
@@ -200,6 +209,9 @@
     }
     .main-title-wrap {
         margin-bottom: 2.2rem;
+        .title-gradient {
+            background-image: linear-gradient(159.85deg, #059DB7 0%, #3BD7BD 100%);
+        }
     }
 }
 .main-icons-box {
@@ -208,7 +220,7 @@
     .main-title-wrap {
         color: #303031;
         .h3-title {
-            color: #616161;
+            color: #303031;
         }
     }
     .items-inner-wrap {
@@ -352,8 +364,27 @@
     .photo-inner-wrap {
         width: 30rem;
         flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+        &.photo-back {
+            &:before {
+                content: "";
+                display: block;
+                width: 1177px;
+                height: 1177px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -600px 0 0 -630px;
+                background: url(../img/phone-back.svg) center no-repeat;
+                background-size: auto 100%;
+                border-radius: 50%;
+            }
+        }
     }
     .info-inner-wrap {
+        position: relative;
+        z-index: 2;
         flex: 1;
         width: calc(100% - 30rem);
         max-width: 84rem;
@@ -398,10 +429,10 @@
         width: 50%;
     }
     .wrap-main {
-        width: 63%;
+        width: 56%;
     }
     .wrap-small {
-        width: 37%;
+        width: 44%;
     }
 }
 .tiles-payments-box {
@@ -430,6 +461,14 @@
         width: 50%;
         padding: 0 1.6rem;
         margin-bottom: 3.2rem;
+    }
+    .main-title-wrap {
+        max-width: 67.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        .title-gradient {
+            background-image: linear-gradient(90deg, #FED185 0%, #F96E7A 21.87%, #A660FA 60.42%, #37D7F3 100%);
+        }
     }
 }
 .tiles-cards-second-box {
@@ -733,6 +772,11 @@
             width: 50%;
         }
     }
+    .main-actions-qr-wrap {
+        .action-qr {
+            display: none;
+        }
+    }
 }
 @media (max-width: 639px) {
     .main-news-box {
@@ -832,12 +876,12 @@
             }
             .text-inner-wrap {
                 width: 100%;
-                padding: 0;
-                order: 2;
+                padding: 30px 0 0 0 0;
+                order: 3;
             }
             .photo-inner-wrap {
                 margin: 30px auto 0 auto;
-                order: 3;
+                order: 2;
             }
             .h4-title {
                 margin: 0 0 2.4rem 0;
