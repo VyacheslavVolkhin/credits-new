@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/cards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/cryptoaccounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/cryptoaccounts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/payments.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/payments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cryptoaccounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoaccounts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/forms.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/forms.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/main.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cards02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/cards02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cards03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/cards03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/credit01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/credit02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/credit02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/map.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/screen10.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/screen10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/spr.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/spr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +52,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/htmlworker/Sites/0029/credits-new/_includes",
+    "last_opened_file_path": "/Users/vaceslavvolhin/Downloads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_includes" />
+      <recent name="$USER_HOME$/Downloads" />
       <recent name="$PROJECT_DIR$/_html" />
+      <recent name="$PROJECT_DIR$/_includes" />
       <recent name="$PROJECT_DIR$/css/less" />
     </key>
   </component>
@@ -94,6 +101,10 @@
       <workItem from="1611832621185" duration="264000" />
       <workItem from="1672125790687" duration="1453000" />
       <workItem from="1672127313961" duration="39182000" />
+      <workItem from="1673863747734" duration="301000" />
+      <workItem from="1674061557635" duration="2848000" />
+      <workItem from="1674106064152" duration="3651000" />
+      <workItem from="1674357213145" duration="36794000" />
     </task>
     <servers />
   </component>

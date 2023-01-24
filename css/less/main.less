@@ -31,11 +31,11 @@ body {
 	color: var(--clr-base);
 	background: #fff;
     font-size: 14px;
-    line-height: 18/14;
+    line-height: (18/14);
 }
 p, ul, ol, table, blockquote, .bq-text {
 	position: relative;
-    margin-bottom: 18/14em;
+    margin-bottom: (18/14em);
 	img {
 		max-width: 100%;
 	}
@@ -63,6 +63,7 @@ a.link-main, .link-main {
 .link-phone {
     white-space: nowrap;
 }
+.page-subtitle,
 .main-title, 
 h1, .h1-title,
 h2, .h2-title,
@@ -79,6 +80,16 @@ h6, .h6-title {
     font-weight: 600;
     letter-spacing: -0.02em;
     &:first-child {
+        margin-top: 0;
+    }
+}
+.page-subtitle {
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: (22/18);
+    margin: 0 0 (12/18em) 0;
+    font-weight: bold;
+    &+* {
         margin-top: 0;
     }
 }
@@ -117,11 +128,11 @@ h6, .h6-title {
 }
 .text-body-main {
     font-size: 18px;
-    line-height: 26/18;
+    line-height: (26/18);
 }
 .text-body-min {
     font-size: 18px;
-    line-height: 22/18;
+    line-height: (22/18);
 }
 .text-body-note {
     font-size: 16px;
@@ -168,6 +179,45 @@ h6, .h6-title {
     }
     &.gr10 {
         background-image: linear-gradient(90.36deg, #EC9A86 2.6%, #E58CA6 23.79%, #C18CD0 77.53%, #929BE3 101.82%);
+    }
+    &.gr11 {
+        background-image: linear-gradient(90deg, #0029FF 0%, #ED7DCE 100%);
+    }
+    &.gr12 {
+        background-image: linear-gradient(90deg, #0029FF 0%, #ED7DCE 100%);
+    }
+}
+table.tbl-main-info {
+    margin-bottom: 5rem;
+    color: #575759;
+    font-weight: 400;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    tr {
+        &:first-child {
+            th, td {
+                padding-top: 0;
+            }
+        }
+    }
+    th, td {
+        text-align: left;
+        font-weight: 400;
+        font-size: inherit;
+        vertical-align: top;
+        border: none;
+        border-bottom: 1px solid #C9CBCE;
+        padding: 3.2rem 0 1.6rem 0;
+        &:first-child {
+            border-bottom: none;
+            padding-right: 2.4rem;
+            color: var(--clr-title);
+            font-weight: bold;
+        }
+    }
+    p {
+        margin-bottom: 8px;
     }
 }
 @media (max-width: 1399px) {
@@ -268,5 +318,10 @@ h6, .h6-title {
 @media (min-width: 1024px) {
     :root {
         --paddingContainer: 30px;
+    }
+    .main-title {
+        &.title-large {
+            font-size: 9.6rem;
+        }
     }
 }

@@ -19,6 +19,15 @@ $(document).ready(function(){
 	  });
 	  return this;
 	};
+
+
+    //item-tile-video
+    $('.js-btn-video').on('click', function () {
+        let videoURL = $(this).parent('.item-tile-video').attr('data-video');
+        $(this).parents('.item-tile-video').addClass('active');
+        $(this).parents('.item-tile-video').append('<iframe width="100%" height="100%" src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>')
+        return false;
+    })
     
     
 

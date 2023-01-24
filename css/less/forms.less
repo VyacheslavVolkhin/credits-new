@@ -1,6 +1,53 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+
+.frm-main-button {
+    display: flex;
+    .form-input, .btn {
+        height: 4.6rem;
+        min-height: 4rem;
+    }
+    .field-button {
+        flex-shrink: 0;
+        padding-left: 2rem;
+    }
+    .field-input {
+        flex: 1;
+    }
+}
+.frm-main-search {
+    display: block;
+    position: relative;
+    line-height: 1;
+    overflow: hidden;
+    .btn {
+        position: absolute;
+        top: 110%;
+        left: 110%;
+        opacity: 0;
+        pointer-events: none;
+        width: 0;
+        height: 0;
+        padding: 0;
+        min-width: 0;
+    }
+    .form-input {
+        height: 54px;
+        border-radius: 10px;
+        background: #fff url(../img/icons/search.svg) 12px center no-repeat;
+        background-size: 16px auto;
+        border: 1px solid #BDBFC3;
+        padding: 0 10px 0 45px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--clr-title);
+    }
+    [placeholder]::-webkit-input-placeholder {color: #B8B8B8;}
+    [placeholder]:-moz-placeholder {color: #B8B8B8;}
+    [placeholder]::-moz-placeholder {color: #B8B8B8;}
+    [placeholder]:-ms-input-placeholder {color: #B8B8B8;}
+}
 .frm-row,
 .frm-field,
 .frm-row-submit {
@@ -38,4 +85,17 @@
             position: absolute;
         }
 	}
+}
+
+@media (max-width: 479px) {
+    .frm-main-button {
+        display: block;
+        .field-button {
+            padding: 0;
+            margin-top: 10px;
+            .btn {
+                width: 100%;
+            }
+        }
+    }
 }
