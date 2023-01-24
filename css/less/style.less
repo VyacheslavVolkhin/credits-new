@@ -11,11 +11,27 @@
 @import 'fonts.less';
 
 
+
 /*old pages styles*/
 .page-full {
     &.wrap-inner-pages {
         padding-top: 8rem;
         padding-bottom: 5rem;
+    }
+    &.wrap-bg-pages {
+        position: relative;
+        background-color: #f1f1f1;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 100vw;
+            transform: translateX(-50%);
+            background-color: #f1f1f1;
+        }
     }
 }
 .wrap-inner-pages {
@@ -120,7 +136,31 @@
         margin-bottom: (32/36em);
     }
 }
-
+.item-tile-info-help {
+    display: block;
+    position: relative;
+    line-height: (22/20);
+    .tile-title {
+        margin: 0 0 16px 0;
+    }
+    .tile-menu {
+        margin: 0;
+        li {
+            margin: 0;
+            padding: 0;
+            &:before {
+                display: none;
+            }
+        }
+        a {
+            display: block;
+            padding: 7px 0;
+            &:not(:hover) {
+                color: inherit;
+            }
+        }
+    }
+}
 .item-tile-new-inner {
     display: flex;
     flex-direction: column;
@@ -151,7 +191,7 @@
         padding-bottom: 20px;
         margin: 0;
         line-height: 1.1;
-        max-width: 260/24em;
+        max-width: (260/24em);
     }
     .tile-category, .tile-date {
         display: block;
@@ -212,8 +252,8 @@
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    padding: 0 34/24em 0 0;
-    line-height: 30/24;
+    padding: 0 (34/24em) 0 0;
+    line-height: (30/24);
     transition: all ease 0.2s;
     &.button-gray {
         &:not(:hover) {
@@ -701,8 +741,42 @@
         }
     }
 }
+
+.main-questions-list-box {
+    background-color: #fff;
+    padding: 8rem 0 56px 0;
+    font-size: 2rem;
+    .title-header-wrap {
+        text-align: center;
+        margin-bottom: 6.4rem;
+    }
+    .menu {
+        color: var(--clr-title);
+        margin: 0;
+        columns: 2;
+        column-gap: 14rem;
+        li {
+            page-break-inside: avoid;
+            break-inside: avoid-column;
+            margin: 0;
+            padding: 0;
+            &:before {
+                display: none;
+            }
+        }
+        a {
+            display: block;
+            padding: (11/20em) 0;
+            position: relative;
+            &:not(:hover) {
+                color: inherit;
+            }
+        }
+    }
+}
 .help-center-box {
     margin-bottom: 0;
+    position: relative;
     .items-outer-wrap {
         max-width: 1100px;
         margin: 0 auto;
@@ -718,6 +792,16 @@
     }
 }
 @media (max-width: 1023px) {
+    .item-tile-info-help {
+        .tile-title {
+            font-size: 18px;
+        }
+    }
+    .main-questions-list-box {
+        .menu {
+            column-gap: 4rem;
+        }
+    }
     .title-header-wrap {
         font-size: 2rem;
     }
@@ -824,7 +908,12 @@
     }
 }
 @media (max-width: 479px) {
-
+    .main-questions-list-box {
+        .menu {
+            columns: 1;
+            column-gap: 0;
+        }
+    }
     .about-box {
         .item-wrap {
             width: 100%;
@@ -911,18 +1000,24 @@
     }
 }
 @media (min-width: 1024px) {
-
+    .main-questions-list-box {
+        .menu {
+            padding-left: 100px;
+            padding-right: 100px;
+            max-width: inherit;
+        }
+    }
     .content-outer-wrap {
         max-width: inherit;
-        padding-right: 190px;
-        padding-left: 193px;
+        padding-right: 100px;
+        padding-left: 100px;
         .content-wrap {
             max-width: inherit;
         }
     }
     .help-center-box {
-        padding-left: 193px;
-        padding-right: 190px;
+        padding-left: 100px;
+        padding-right: 100px;
         max-width: inherit;
         .items-outer-wrap {
             margin: 0;
@@ -937,6 +1032,11 @@
     }
 }
 @media (min-width: 1024px) and (max-width: 1399px) {
+    .main-questions-list-box {
+        .menu {
+            padding-right: 0;
+        }
+    }
     .content-outer-wrap {
         padding-right: 0;
     }

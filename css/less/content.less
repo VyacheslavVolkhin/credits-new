@@ -1,6 +1,83 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.main-pitch-tiles-box {
+    padding: 12.8rem 0;
+    .main-title-wrap {
+        margin: 0 auto 4.8rem auto;
+        max-width: 80.8rem;
+    }
+    .items-wrap {
+        margin: 0 -1.6rem  -4.8rem  -1.6rem;
+    }
+    .item-wrap {
+        width: 50%;
+        padding: 0 1.6rem;
+        margin-bottom: 4.8rem;
+    }
+    .wrap-full {
+        width: 100%;
+    }
+}
+.main-iban-tiles-second-box,
+.main-iban-tiles-third-box {
+    padding: 12.8rem 0;
+    .main-title-wrap {
+        margin-bottom: 6.4rem;
+        .title-gradient {
+            background-image: linear-gradient(90deg, #33B78F 0%, #019E6F 100%);
+        }
+    }
+    .items-wrap {
+        margin: 0 -1.6rem -3.2rem -1.6rem;
+    }
+    .item-wrap {
+        padding: 0 1.6rem;
+        margin-bottom: 3.2rem;
+        width: 50%;
+    }
+}
+.main-iban-tiles-third-box {
+    .main-title-wrap {
+    }
+    .item-wrap {
+        margin-bottom: 3.2rem;
+        width: 33.33%;
+    }
+    .items-wrap {
+        margin-bottom: -3.2rem;
+    }
+    .items-inner-wrap {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+    .main-buttons-wrap {
+        padding-top: 5.4rem;
+        margin-bottom: -10px;
+    }
+}
+.main-iban-tiles-box {
+    padding: 12.8rem 0;
+    .main-title-wrap {
+        margin-bottom: 6.4rem;
+        .title-gradient {
+            background-image: linear-gradient(90deg, #0029FF 0%, #ED7DCE 100%);
+        }
+    }
+    .main-buttons-wrap {
+        padding-top: 6.4rem;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .items-wrap {
+        margin: 0 -8px -16px -8px;
+    }
+    .item-wrap {
+        padding: 0 8px;
+        margin-bottom: 16px;
+        width: 25%;
+    }
+}
 .main-partnerships-tiles-box {
     padding: 12.8rem 0;
     .main-title-wrap {
@@ -26,13 +103,13 @@
         margin-bottom: 3.2rem;
         padding: 0 1.6rem;
     }
-    .items-third {
+    .tiles-third {
         max-width: 1240px;
         .item-wrap {
             width: 33.33%;
         }
     }
-    .items-four {
+    .tiles-four {
         .items-wrap {
             margin: 0 -8px -16px -8px;
         }
@@ -46,6 +123,40 @@
         margin-top: 4.8rem;
         text-align: center;
         line-height: 1;
+    }
+}
+.main-pitch-head-box {
+    padding: 9.6rem 0 0 0;
+    .elm-photo {
+        width: 59.3rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .photo-inner-wrap {
+    }
+    .title-inner-wrap {
+        margin-bottom: 6.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 85rem;
+        text-align: center;
+        color: #7D7E80;
+        .title-dark {
+            color: #1D1D1F;
+        }
+        .h1-title {
+            margin: 0 0 24px 0;
+            color: var(--clr-base);
+            .title-gradient {
+                background-image: linear-gradient(89.86deg, #0039AD 0.12%, #3678FF 82.24%);
+            }
+        }
+        .h4-title {
+            margin: 0 0 24px 0;
+            font-weight: 500;
+            letter-spacing: -0.04em;
+            color: inherit;
+        }
     }
 }
 .main-ld-head-box {
@@ -358,6 +469,28 @@
         text-align: left;
         margin-bottom: 4.8rem;
         color: var(--clr-base);
+        &.title-second {
+            text-align: center;
+            max-width: 94.3rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 6.4rem;
+            .h1-title {
+                margin: 0 0 24px 0;
+                color: var(--clr-title);
+                .title-gradient {
+                    background-image: linear-gradient(90deg, #0029FF 0%, #ED7DCE 100%);
+                }
+            }
+            .h5-title {
+                color: #575759;
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+            .title-att {
+                color: #0029FF;
+            }
+        }
         .h4-title {
             font-weight: 600;
             margin-bottom: 24px;
@@ -370,6 +503,10 @@
         p {
             max-width: (800/24em);
         }
+    }
+    .main-buttons-wrap {
+        padding-top: 6.4rem;
+        margin-bottom: -10px;
     }
     .items-wrap {
         margin: 0 -8px -16px -8px;
@@ -562,6 +699,7 @@
     .news-box {
         margin-bottom: 100px;
     }
+    
 }
 .wrap-light {
     .main-bg-light-box {
@@ -571,6 +709,9 @@
 .main-bg-box {
     background-color: #151516;
     padding: 12.8rem 0 12.8rem;
+    &.bg-gray {
+        background-color: #F0F2F6;
+    }
     .inner-head-box {
         color: #fff;
         padding: 12.8rem 0;
@@ -627,6 +768,9 @@
         .box-inner-wrap {
             margin-bottom: 21rem;
         }
+    }
+    .item-tile-service-full {
+        background-color: #fff;
     }
 }
 .main-questions-box {
@@ -1090,6 +1234,14 @@
     }
 }
 .main-top-box {
+    &.section-iban {
+        .h1-title {
+            margin: 0 0 0.45em 0;
+        }
+        .title-wrap {
+            margin-bottom: 6.8rem;
+        }
+    }
     .inner-wrap {
         display: flex;
         align-items: center;
@@ -1432,6 +1584,23 @@
     }
 }
 @media (max-width: 1023px) {
+    .main-pitch-head-box {
+        .elm-photo {
+            width: 40rem;
+        }
+    }
+    .main-partnerships-tiles-box {
+        .tiles-four {
+            .item-wrap {
+                width: 50%;
+            }
+        }
+    }
+    .main-iban-tiles-box {
+        .item-wrap {
+            width: 50%;
+        }
+    }
     .main-ld-head-box {
         .box-inner-wrap {
             padding-left: 0;
@@ -1528,6 +1697,16 @@
     }
 }
 @media (max-width: 767px) {
+    .main-partnerships-tiles-box {
+        .item-wrap {
+            width: 100%;
+        }
+        .tiles-third {
+            .item-wrap {
+                width: 100%;
+            }
+        }
+    }
     .main-ld-tiles-box {
         .item-wrap {
             width: 50%;
@@ -1616,6 +1795,16 @@
     }
 }
 @media (max-width: 639px) {
+    .main-iban-tiles-third-box {
+        .item-wrap {
+            width: 50%;
+        }
+    }
+    .main-iban-tiles-second-box {
+        .item-wrap {
+            width: 100%;
+        }
+    }
     .main-ld-head-box {
         .box-inner-wrap {
             flex-direction: column;
@@ -1908,6 +2097,18 @@
     }
 }
 @media (max-width: 479px) {
+    .main-partnerships-tiles-box {
+        .tiles-four {
+            .item-wrap {
+                width: 100%;
+            }
+        }
+    }
+    .main-iban-tiles-box {
+        .item-wrap {
+            width: 100%;
+        }
+    }
     .main-ld-tiles-box {
         .item-wrap {
             width: 100%;
@@ -1944,6 +2145,15 @@
         }
     }
 }
+@media (min-width: 640px) {
+    .main-top-box {
+        &.section-iban {
+            .info-inner-wrap {
+                padding-right: 5rem;
+            }
+        }
+    }
+}
 @media (min-width: 1024px) {
     .main-ld-head-box {
         li {
@@ -1964,6 +2174,25 @@
         }
     }
     .main-top-box {
+        &.section-iban {
+            .inner-wrap {
+                max-width: 1030px;
+            }
+            .photo-inner-wrap {
+                width: 29.6rem;
+                padding: 0;
+                flex-shrink: 0;
+            }
+            .info-inner-wrap {
+                padding-right: 5rem;
+                max-width: calc(100% - 29.6rem);
+            }
+            .inner-wrap {
+                padding-top: 7.3rcap;
+                padding-bottom: 16rem;
+                justify-content: space-between;
+            }
+        }
         &.type-second {
             .info-inner-wrap {
                 .title-wrap {
@@ -1973,7 +2202,26 @@
         }
     }
 }
+@media (min-width: 1200px) {
+    .main-top-box {
+        &.section-iban {
+            .main-actions-qr-wrap {
+                .action-qr {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
 @media (min-width: 1400px) {
+    .main-pitch-head-box {
+        .title-inner-wrap {
+            .h1-title.title-large {
+                font-size: 8.8rem;
+                line-height: (96/88);
+            }
+        }
+    }
     .main-about-head-box {
         &.type-second {
             padding-top: 25.6rem;

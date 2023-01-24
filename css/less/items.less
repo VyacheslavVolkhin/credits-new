@@ -1,14 +1,257 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
-.item-tile-prt-second, .item-tile-prt, .item-tile-prt-third {
+.item-tile-logos {
+    border-radius: 1.6rem;
+    padding: 4.8rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F2F6;
+    min-height: 60rem;
+    height: 100%;
+    .tile-title-wrap {
+        flex-shrink: 0;
+        min-height: 3rem;
+    }
+    .tile-photo-wrap {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tile-photo {
+        width: 20rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .tile-title {
+        text-align: center;
+        margin-bottom: 1em;
+        color: #9F61DD;
+    }
+}
+.item-tile-crypto {
+    display: flex;
+    flex-direction: column;
+    min-height: 60rem;
+    border-radius: 1.6rem;
+    background-color: #1D1D1F;
+    color: #fff;
+    padding: 4.8rem 2.4rem 0 2.4rem;
+    .tile-title-wrap {
+        flex: 1;
+    }
+    .tile-subtitle {
+        margin: 0 0 3.2rem 0;
+        color: inherit;
+    }
+    .tile-title {
+        margin: 0;
+        color: inherit;
+    }
+    .tile-photo-wrap {
+        padding: 3.3rem 0 0 0;
+    }
+    .tile-photo {
+        max-width: 25.2rem;
+        margin: 0 auto;
+    }
+}
+.item-tile-logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 48rem;
+    height: 100%;
+    border-radius: 1.6rem;
+    background-color: #F0F2F6;
+    padding: 4rem 2.4rem;
+    .tile-title-wrap {
+        margin: 0 -1rem;
+        flex-shrink: 0;
+        padding-bottom: 3rem;
+        min-height: 9rem;
+    }
+    .tile-text-wrap {
+        width: 100%;
+        padding-top: 3rem;
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
+    .tile-photo-wrap {
+        flex-shrink: 0;
+        display: block;
+        width: 100%;
+    }
+    .tile-photo {
+        height: 13rem;
+    }
+    .tile-title {
+        color: #746DDF;
+        margin: 0;
+    }
+}
+.item-tile-iban-second,
+.item-tile-iban-third {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border-radius: 3.2rem;
+    padding: 6.4rem 4.8rem;
+    color: var(--clr-base);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.item-tile-iban-third {
+    padding-bottom: 5.4rem;
+    color: #fff;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #33B78F 0%, #019E6F 100%);
+    .tile-title, .tile-subtitle {
+        color: #fff;
+        margin: 0;
+        width: 100%;
+    }
+    .tile-title {
+        padding: 8rem 0;
+    }
+    .main-actions-wrap {
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding: 0;
+        flex-shrink: 0;
+    }
+    .btn-action-more {
+        &:not(:hover) {
+            color: #fff;
+            &:before {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+.item-tile-iban-second {
+    padding-bottom: 0;
+    background-color: #F0F2F6;
+    .tile-title-wrap {
+        flex: 1;
+        width: 100%;
+    }
+    .tile-photo-wrap {
+        flex-shrink: 0;
+        width: 100%;
+        padding: 6.4rem 3rem 0 3rem;
+    }
+    .tile-title {
+        margin: 0 0 16px 0;
+        color: var(--clr-title);
+    }
+    .tile-photo {
+        width: 100%;
+        max-width: 29.6rem;
+        margin: 0 auto;
+    }
+}
+.item-tile-icon-text {
+    text-align: center;
+    display: block;
+    color: #575759;
+    .tile-ico {
+        width: 9.6rem;
+        height: 9.6rem;
+        border-radius: 50%;
+        margin: 0 auto 2.4rem auto;
+        background-color: var(--clr-base);
+        overflow: hidden;
+        img, svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .tile-title {
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        color: #1D1D1F;
+        margin: 0 0 12px 0;
+    }
+}
+.item-tile-iban {
+    display: block;
+    position: relative;
+    min-height: 100%;
+    color: #7D7E80;
+    font-weight: 500;
+    padding: 4.8rem 2.4rem;
+    border-radius: 1.6rem;
+    background-color: #F0F2F6;
+    .tile-ico {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 1.3rem;
+        background-color: #2169FC;
+        margin: 0 0 2.4rem 0;
+        img {
+            max-width: 4.8rem;
+            max-height: 4.8rem;
+        }
+    }
+    .tile-title {
+        color: var(--clr-title);
+        margin: 0 0 3.2rem 0;
+    }
+}
+.item-tile-prt-second, .item-tile-prt, .item-tile-prt-third, .item-tile-prt-four {
     min-height: 56rem;
+    position: relative;
+    overflow: hidden;
     border-radius: 3.2rem;
     background-color: #F0F2F6;
     padding: 6.4rem 4.8rem;
     font-weight: 500;
     color: var(--clr-title);
     height: 100%;
+}
+.item-tile-prt-four {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    color: #fff;
+    background-color: #1D1D1F;
+    .tile-photos-wrap {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .tile-photo {
+        width: 12.4rem;
+        margin: 0 3.2rem 5.2rem 0;
+        flex-shrink: 0;
+        &+.tile-photo {
+            width: 25.2rem;
+            margin: 0;
+        }
+    }
+    .tile-title-wrap {
+        flex: 1;
+        padding-bottom: 5rem;
+    }
+    .tile-subtitle {
+        color: inherit;
+        margin: 0 0 2.4rem 0;
+    }
+    .tile-title {
+        color: inherit;
+        margin: 0;
+    }
 }
 .item-tile-prt-third {
     display: flex;
@@ -432,6 +675,16 @@
     background: #F0F2F6;
     border-radius: 1.6rem;
     padding: 4.8rem 2.4rem;
+    &.tile-second {
+        color: #7D7E80;
+        .tile-ico {
+            //border-radius: 50%;
+            img, svg {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
     .tile-ico {
         width: 8rem;
         height: 8rem;
@@ -456,6 +709,9 @@
         color: var(--clr-title);
         display: block;
         margin: 0 0 3.2rem 0;
+        &.h6-title {
+            color: var(--clr-base);
+        }
     }
 }
 .item-tile-scheme {
@@ -1988,6 +2244,11 @@
     }
 }
 @media (max-width: 767px) {
+    .item-tile-prt-four {
+        .tile-photos-wrap {
+            max-width: inherit;
+        }
+    }
     .item-tile-view-mobile, .item-tile-view-web, .item-tile-view-offline {
         .tile-photo {
             img {
