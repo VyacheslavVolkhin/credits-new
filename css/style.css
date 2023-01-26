@@ -239,6 +239,10 @@ table.tbl-main-info {
 table.tbl-main-info:last-child {
   margin-bottom: 0;
 }
+table.tbl-main-info tr:last-child th,
+table.tbl-main-info tr:last-child td {
+  border-bottom: none;
+}
 table.tbl-main-info tr:first-child th,
 table.tbl-main-info tr:first-child td {
   padding-top: 0;
@@ -1128,6 +1132,9 @@ body {
   }
   .footer .menu-outer-wrap .menu-soc li {
     margin-right: 10px;
+  }
+  .footer .actions-outer-wrap .action-wrap:last-child.action-qr {
+    display: none;
   }
 }
 @media (max-width: 639px) {
@@ -2072,7 +2079,7 @@ body {
 }
 .item-tile-pitch-second .tile-title-wrap {
   min-height: 7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 .item-tile-logos {
   border-radius: 1.6rem;
@@ -2316,6 +2323,26 @@ body {
   color: var(--clr-title);
   height: 100%;
 }
+.item-tile-prt-second .tile-logo-text,
+.item-tile-prt .tile-logo-text,
+.item-tile-prt-third .tile-logo-text,
+.item-tile-prt-four .tile-logo-text {
+  width: 96px;
+  height: 96px;
+  border: 1px solid #C9CBCE;
+  border-radius: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FB435B;
+  margin: 0 0 16px 0;
+}
 .item-tile-prt-four {
   display: -ms-flexbox;
   display: flex;
@@ -2452,7 +2479,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -3px;
   right: 0;
   background: rgba(0, 0, 0, 0.24);
   border: 3px solid #FFFFFF;
@@ -2539,7 +2566,7 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 4rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -2580,9 +2607,13 @@ body {
   margin-top: 0;
 }
 .item-tile-info-text .tile-ico {
-  width: 54px;
+  width: 72px;
   height: 72px;
   margin: 0 0 3.2rem 0;
+}
+.item-tile-info-text .tile-ico img {
+  left: 0;
+  margin-left: 0;
 }
 .item-tile-integration {
   display: block;
@@ -2619,6 +2650,8 @@ body {
 }
 .item-tile-integration .tile-logo-title {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 .item-tile-integration .tile-logo-title:last-child {
@@ -2627,6 +2660,7 @@ body {
 .item-tile-integration .tile-title {
   margin: 0;
   background-image: linear-gradient(90deg, #0029FF 0%, #ED7DCE 100%);
+  min-height: 3.6em;
 }
 .item-tile-integration .title-att,
 .item-tile-integration .text-att {
@@ -4540,6 +4574,17 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .item-tile-integration .tile-logo-wrap {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C9CBCE;
+  }
+  .item-tile-integration .tile-title-wrap {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C9CBCE;
+  }
+  .item-tile-integration .tile-title {
+    min-height: 0;
+  }
   .item-tile-pitch-full {
     padding-left: 4.8rem;
     padding-right: 4.8rem;
@@ -4732,17 +4777,20 @@ body {
   .item-tile-inner-text {
     padding: 32px 24px 48px 24px;
   }
+  .item-tile-crypto,
   .item-tile-overview-second,
   .item-tile-about-third.tile-smallest,
   .item-tile-about-four {
     padding: 32px 24px;
   }
+  .item-tile-crypto .tile-title,
   .item-tile-overview-second .tile-title,
   .item-tile-about-third.tile-smallest .tile-title,
   .item-tile-about-four .tile-title {
     font-size: 32px;
     line-height: 1.2;
   }
+  .item-tile-crypto .tile-title br,
   .item-tile-overview-second .tile-title br,
   .item-tile-about-third.tile-smallest .tile-title br,
   .item-tile-about-four .tile-title br {
@@ -4808,6 +4856,29 @@ body {
   .item-tile-view-offline .tile-photo img {
     height: 25rem;
   }
+  /* ------ */
+  .item-tile-logo-text {
+    min-height: 420px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .item-tile-logo-text .tile-photo-wrap,
+  .item-tile-logo-text .tile-text-wrap {
+    -ms-flex: inherit;
+        flex: inherit;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .item-tile-logo-text .tile-text-wrap {
+    padding-top: 20px;
+  }
+  /* ------ */
 }
 @media (min-width: 768px) {
   .item-tile-percent.tile-full {
@@ -4871,6 +4942,12 @@ body {
     width: 37%;
     margin-right: 55px;
     padding-top: 32px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .item-tile-info-text .h6-title {
+    margin-left: 0;
+    margin-right: -30px;
   }
 }
 /* ----------------------------------- *\
@@ -5330,6 +5407,17 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
+.main-pitch-head-box .elm-photo img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.main-pitch-head-box .elm-photo:before {
+  display: block;
+  padding-top: 92%;
+}
 .main-pitch-head-box .title-inner-wrap {
   margin-bottom: var(--second-padding);
   margin-left: auto;
@@ -5470,6 +5558,10 @@ body {
 .main-info-tiles-box .main-title-wrap ul {
   padding-left: 12px;
 }
+.main-info-tiles-box .main-title-wrap p,
+.main-info-tiles-box .main-title-wrap ul {
+  max-width: 44em;
+}
 .main-info-tiles-box .box-inner-wrap {
   background: #F0F2F6;
   border-radius: 3.2rem;
@@ -5480,6 +5572,21 @@ body {
   margin-right: auto;
   max-width: 1040px;
   margin-bottom: var(--main-padding);
+}
+.main-info-tiles-box .box-inner-wrap.box-second {
+  margin-bottom: 23.6rem;
+}
+.main-info-tiles-box .box-inner-wrap.box-second .h5-title {
+  margin-bottom: 2.4rem;
+}
+.main-info-tiles-box .box-inner-wrap.box-second .main-actions-wrap {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.main-info-tiles-box .box-inner-wrap.box-second .main-actions-wrap .action-wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .main-info-tiles-box .box-inner-wrap:last-child {
   margin-bottom: 0;
@@ -6978,6 +7085,9 @@ body {
   }
 }
 @media (max-width: 1023px) {
+  .tile-top-box .bg-inner-wrap {
+    left: 40%;
+  }
   .main-tiles-pitch-box .item-wrap {
     width: 50%;
   }
@@ -7176,6 +7286,9 @@ body {
   .main-ld-tiles-box {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
+  }
+  .main-info-tiles-box .box-inner-wrap.box-second {
+    margin-bottom: var(--main-padding);
   }
   .inner-head-box .main-title-wrap:first-child {
     padding-top: 0;
@@ -7392,6 +7505,7 @@ body {
   }
   .tile-top-box .bg-inner-wrap {
     left: 0;
+    top: 50%;
   }
   .tile-top-box p {
     margin-left: auto;
