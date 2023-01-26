@@ -6,6 +6,9 @@
 	--clr-att-second: #0029FF;
 	--clr-light: #e4e4e;
     
+    --main-padding: 12.8rem;
+    --second-padding: 6.4rem;
+    
     --main-radius: 1.6rem;
     
     --main-shadow: 3px 5px 24px rgba(45, 47, 64, 0.08);
@@ -85,7 +88,8 @@ h6, .h6-title {
 }
 .page-subtitle {
     display: inline-block;
-    font-size: 1.8rem;
+    //font-size: 1.8rem;
+    font-size: 24px;
     line-height: (22/18);
     margin: 0 0 (12/18em) 0;
     font-weight: bold;
@@ -271,6 +275,20 @@ table.tbl-main-info {
         font-size: 7px;
     }
 }
+@media (max-width: 639px) {
+    :root {
+        --main-padding: 64px;
+        --second-padding: 64px;
+    }
+    /* --- */
+    .page-subtitle {
+        font-size: 16px;
+    }
+    .h4-title, .h5-title, h4, h5 {
+        font-size: 28px;
+    }
+    /* --- */
+}
 @media (max-width: 479px) {
     .main-title, h1, .h1-title, h2, .h2-title {
         font-size: 5rem;
@@ -304,12 +322,6 @@ table.tbl-main-info {
     }
     h3, .h3-title {
         font-size: 3.2rem;
-    }
-    h4, .h4-title {
-        font-size: 3rem;
-    }
-    h5, .h5-title {
-        font-size: 3rem;
     }
     h6, .h6-title {
         font-size: 20px;

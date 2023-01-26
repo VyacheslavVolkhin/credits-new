@@ -97,7 +97,7 @@ module.exports = function (grunt) {
                         annotation: 'css/maps/'
                     },*/
                     processors: [
-                        require('pixrem')(), // add fallbacks for rem units
+                        //require('pixrem')(), // add fallbacks for rem units
                         require('autoprefixer')({overrideBrowserslist: 'last 2 versions'}), // add vendor prefixes
                         require('cssnano')({
                             options: {
@@ -121,7 +121,7 @@ module.exports = function (grunt) {
                         annotation: 'css/maps/'
                     },*/
                     processors: [
-                        require('pixrem')(), // add fallbacks for rem units
+                        //require('pixrem')(), // add fallbacks for rem units
                         require('autoprefixer')({overrideBrowserslist: 'last 2 versions'}),
                     ]
                 },
