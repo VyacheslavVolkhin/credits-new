@@ -225,6 +225,28 @@ select::-ms-expand {
             }
         }
     }
+    &.ico-close-main {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 2px solid var(--clr-title);
+        &:after, &:before {
+            width: 12px;
+            height: 2px;
+            border-radius: 1px;
+            background: var(--clr-title);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            right: auto;
+            .t-rotate(45deg);
+            margin: -1px 0 0 -6px;
+        }
+        &:after {
+            .t-rotate(-45deg);
+        }
+    }
     &.ico-close {
         &:after, &:before {
             width: 20px;

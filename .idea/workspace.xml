@@ -7,11 +7,9 @@
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STO.html" beforeDir="false" afterPath="$PROJECT_DIR$/STO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/STO.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/STO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/bounty.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/bounty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/iban.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/iban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/partnerships.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/partnerships.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_html/pitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/pitch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
@@ -20,33 +18,16 @@
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptoaccounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoaccounts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fees.html" beforeDir="false" afterPath="$PROJECT_DIR$/fees.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/help-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/help-main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iban.html" beforeDir="false" afterPath="$PROJECT_DIR$/iban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/06.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/06.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cr-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/cr-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo06.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo06.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo07.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo07.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo09.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo09.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/i-logo10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/i-logo10.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mobile01.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/mobile01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mobile02.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/mobile02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/offline.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/offline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pitch-tiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/pitch-tiles.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pitch.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/pitch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prt-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/prt-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/screen-pitch.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/screen-pitch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/screen12.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/screen12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/web.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/web.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ld.html" beforeDir="false" afterPath="$PROJECT_DIR$/ld.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
@@ -141,7 +122,7 @@
       <workItem from="1673863747734" duration="301000" />
       <workItem from="1674061557635" duration="2848000" />
       <workItem from="1674106064152" duration="3651000" />
-      <workItem from="1674357213145" duration="76422000" />
+      <workItem from="1674357213145" duration="80263000" />
     </task>
     <servers />
   </component>
