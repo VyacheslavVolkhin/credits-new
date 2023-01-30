@@ -797,18 +797,24 @@
     color: var(--clr-title);
     height: 100%;
     .tile-logo-text {
-        width: 96px;
-        height: 96px;
+        display: block;
+        width: 100%;
+        flex-shrink: 0;
+        margin: 0 0 24px 0;
+    }
+    .tile-logo-inner-text {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
         border: 1px solid #C9CBCE;
         border-radius: 10px;
-        display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        font-size: 32px;
-        font-weight: bold;
+        line-height: 1.4;
+        font-weight: 500;
         color: #FB435B;
-        margin: 0 0 16px 0;
+        padding: 2.3rem 15px;
+        text-align: left;
     }
 }
 .item-tile-prt-four {
