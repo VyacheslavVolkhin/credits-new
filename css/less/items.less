@@ -1,6 +1,75 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-team {
+    color: #575759;
+    .tile-photo-wrap {
+        display: block;
+    }
+    .tile-info-wrap {
+        display: block;
+        padding: 20px 0 0 0;
+    }
+    .tile-soc-wrap {
+        margin: 12px -12px -12px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tile-photo {
+        background: #F0F2F6;
+        border-radius: 1.6rem;
+        &:before {
+            padding-top: 100%;
+        }
+    }
+    .tile-title {
+        margin: 0 0 8px 0;
+        color: var(--clr-base-dark);
+    }
+    .ico-soc {
+        width: 32px;
+        height: 32px;
+        margin: 0 12px 12px 0;
+        flex-shrink: 0;
+        &:not(:hover) {
+            opacity: 0.6;
+        }
+        img, svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+.item-tile-total {
+    display: flex;
+    align-items: center;
+    color: #575759;
+    font-weight: 500;
+    .tile-total-value {
+        flex-shrink: 0;
+        display: block;
+        margin: 0;
+        &.title-gradient {
+            background-image: linear-gradient(88.31deg, #022AFF 1.43%, #2636F7 97.23%);
+        }
+        &.title-second {
+            background-image: linear-gradient(88.31deg, #2E39F6 1.43%, #694EE9 97.23%);
+        }
+        &.title-third {
+            background-image:  linear-gradient(88.31deg, #7051E8 1.43%, #8D5BE2 97.23%);
+        }
+        &.title-four {
+            background-image: linear-gradient(88.31deg, #945EE0 1.43%, #D575D3 97.23%);
+        }
+    }
+    .tile-total-title {
+        display: block;
+        padding: 0 0 0 16px;
+    }
+}
 .item-tile-scheme-inner {
     display: block;
     width: 100%;
@@ -2802,6 +2871,13 @@
     }
 }
 @media (max-width: 1023px) {
+    .item-tile-total {
+        display: block;
+        text-align: center;
+        .tile-total-title {
+            padding: 15px 0 0 0;
+        }
+    }
     .item-tile-scheme {
         .btn {
             font-size: 11px;
@@ -3242,6 +3318,13 @@
         .h6-title {
             margin-left: 0;
             margin-right: -30px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .item-tile-total {
+        .tile-total-value {
+            font-size: 8.8rem;
         }
     }
 }
