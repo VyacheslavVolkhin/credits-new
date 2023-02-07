@@ -8366,6 +8366,9 @@ body.popup-open {
   font-weight: 500;
   background-color: #fff;
 }
+.form-input.inp-error {
+  border-color: #FB435B !important;
+}
 .form-input.inp-button {
   width: 100%;
   text-align: left;
