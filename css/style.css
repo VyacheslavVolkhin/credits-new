@@ -8951,16 +8951,47 @@ select::-ms-expand {
   right: 0;
   border: 1px solid #DDDFE3;
   border-radius: 12px;
-  padding: 12px 20px;
-  max-height: 276px;
+  padding: 12px 8px;
   background-color: #fff;
   z-index: 30;
+}
+.frm-main-country .option-list {
+  padding: 0 12px;
+  max-height: 252px;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
-.frm-main-country .option::-webkit-scrollbar {
+.frm-main-country .option-list::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: #DDDFE3;
+}
+.frm-main-country .option-list::-webkit-scrollbar-thumb {
+  background-color: #7D7E80;
+  border-radius: 4px;
+}
+.frm-main-country .option-list::-webkit-scrollbar-thumb:hover {
+  background-color: #7D7E80;
+  border-radius: 4px;
+}
+.frm-main-country .option-list::-webkit-scrollbar-button:vertical:start:decrement {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.frm-main-country .option-list::-webkit-scrollbar-button:vertical:end:increment {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.frm-main-country .option-list::-webkit-scrollbar-button:horizontal:start:decrement {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.frm-main-country .option-list::-webkit-scrollbar-button:horizontal:end:increment {
+  background-color: transparent;
   width: 0;
   height: 0;
 }

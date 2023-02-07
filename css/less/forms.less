@@ -89,15 +89,46 @@
         right: 0;
         border: 1px solid #DDDFE3;
         border-radius: 12px;
-        padding: 12px 20px;
-        max-height: 276px;
+        padding: 12px 8px;
         background-color: #fff;
         z-index: 30;
+    }
+    .option-list {
+        padding: 0 12px;
+        max-height: 252px;
         overflow-y: auto;
         overflow-x: hidden;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
         &::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            background-color: #DDDFE3;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #7D7E80;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #7D7E80;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-button:vertical:start:decrement {
+            background-color: transparent;
+            width: 0;
+            height: 0;
+        }
+        &::-webkit-scrollbar-button:vertical:end:increment {
+            background-color: transparent;
+            width: 0;
+            height: 0;
+        }
+        &::-webkit-scrollbar-button:horizontal:start:decrement {
+            background-color: transparent;
+            width: 0;
+            height: 0;
+        }
+        &::-webkit-scrollbar-button:horizontal:end:increment {
+            background-color: transparent;
             width: 0;
             height: 0;
         }
