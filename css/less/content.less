@@ -79,6 +79,58 @@ body.popup-open {
     p {
         margin-bottom: 0.7em;
     }
+    &.popup-form {
+        box-shadow: 3px 5px 24px rgba(45, 47, 64, 0.08);
+        overflow: visible;
+        .popup-title-wrap {
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .popup-content-wrap {
+            overflow: visible;
+        }
+    }
+}
+.popup-form-box {
+    .frm-row {
+        margin: 0 auto;
+        max-width: 528px;
+        display: block;
+    }
+    .frm-field {
+        padding: 0;
+        margin: 0 0 16px 0;
+    }
+    .frm-row-submit {
+        margin: 0 auto;
+        max-width: 432px;
+        padding-top: 8px;
+        .frm-field {
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .field-info {
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--clr-title);
+            a {
+                &:not(:hover) {
+                    color: inherit;
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .frm-field-message {
+        margin-top: 9px;
+    }
 }
 .popup-info-box {
     display: block;
@@ -3199,6 +3251,25 @@ body.popup-open {
     }
 }
 @media (min-width: 1024px) {
+    .popup-box {
+        &.popup-form {
+            padding: 6.4rem 4.8rem;
+            width: 720px;
+            border-radius: 24px;
+            .popup-title-wrap {
+                font-size: 14px;
+                .popup-title {
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: (44/36);
+                    margin: 0 0 8px 0;
+                }
+            }
+        }
+    }
+    .popup-form-box {
+        
+    }
     .main-products-info-box {
         .box-inner-wrap {
             .item-tile-view-mobile .tile-photo img, .item-tile-view-offline .tile-photo img, .item-tile-view-web .tile-photo img {

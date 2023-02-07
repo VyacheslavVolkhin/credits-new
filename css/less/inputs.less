@@ -7,16 +7,86 @@
     border-radius: 1rem;
     border: 1px solid #888;
     font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    &.inp-button {
+        width: 100%;
+        text-align: left;
+        transition: all ease 0.2s;
+        position: relative;
+        line-height: 1.1;
+        display: flex;
+        align-items: center;
+        padding-right: 44px;
+        color: var(--clr-title);
+        justify-content: flex-start;
+        &:before {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/icons/arrow-select.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px auto;
+            transition: all ease 0.2s;
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            margin-top: -12px;
+        }
+        &.active {
+            border-color: var(--clr-att);
+            &:before {
+                .t-rotate(180deg);
+            }
+        }
+        .button-title, .country-name {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            position: relative;
+            &:before {
+                content: attr(data-placeholder);
+                display: block;
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                width: 100%;
+                color: #7D7E80;
+            }
+        }
+        &.selected {
+            .button-title {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.inp-large {
+        height: 5.6rem;
+        padding-left: 1.9rem;
+        font-size: 16px;
+        border-radius: 1.2rem;
+        min-height: 44px;
+        border-color: #DDDFE3;
+    }
 }
 textarea.form-input {
     height: 120px;
     padding-top: 15px;
     line-height: 1.1;
 }
-[placeholder]::-webkit-input-placeholder {color: #9F9F9F;}
-[placeholder]:-moz-placeholder {color: #9F9F9F;}
-[placeholder]::-moz-placeholder {color: #9F9F9F;}
-[placeholder]:-ms-input-placeholder {color: #9F9F9F;}
+[placeholder]::-webkit-input-placeholder {color: #7D7E80;}
+[placeholder]:-moz-placeholder {color: #7D7E80;}
+[placeholder]::-moz-placeholder {color: #7D7E80;}
+[placeholder]:-ms-input-placeholder {color: #7D7E80;}
 select.form-input {
     display: block;
     width: 100%;

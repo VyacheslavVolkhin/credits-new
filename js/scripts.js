@@ -103,11 +103,13 @@ $(document).ready(function(){
     });
     $('.js-popup-wrap').each(function() {
         if ($(this).hasClass('js-popup-select')) {
-            if ($(this).find('.js-popup-block').find('.active').length>0) {} else {
-                $(this).find('.js-popup-block').find('li').eq(0).children('a').addClass('active');
+            if ($(this).find('.js-popup-block').find('.active').length>0) {
+                $(this).find('.js-btn-toggle').addClass('selected');
+                var currentSelect = $(this).find('.js-popup-block').find('.active').html();
+                $(this).find('.js-btn-toggle').children('.button-title').html(currentSelect);
+            } else {
+                $(this).find('.js-btn-toggle').removeClass('selected');
             }
-            var currentSelect = $(this).find('.js-popup-block').find('.active').html();
-            $(this).find('.js-btn-toggle').html(currentSelect);
         }
     })
     $('.js-popup-wrap.js-popup-select .js-popup-block a').on('click', function() {
@@ -121,11 +123,13 @@ $(document).ready(function(){
         }
         $('.js-popup-wrap').each(function() {
             if ($(this).hasClass('js-popup-select')) {
-                if ($(this).find('.js-popup-block').find('.active').length>0) {} else {
-                    $(this).find('.js-popup-block').find('li').eq(0).children('a').addClass('active');
+                if ($(this).find('.js-popup-block').find('.active').length>0) {
+                    $(this).find('.js-btn-toggle').addClass('selected');
+                    var currentSelect = $(this).find('.js-popup-block').find('.active').html();
+                    $(this).find('.js-btn-toggle').children('.button-title').html(currentSelect);
+                } else {
+                    $(this).find('.js-btn-toggle').removeClass('selected');
                 }
-                var currentSelect = $(this).find('.js-popup-block').find('.active').html();
-                $(this).find('.js-btn-toggle').html(currentSelect);
             }
         })
         $(this).parents('.js-popup-wrap').find('.js-btn-toggle').removeClass('active');
