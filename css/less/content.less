@@ -12,7 +12,8 @@ body.popup-open {
     justify-content: center;
     position: fixed;
     z-index: 100;
-    background: fade(#000, 70);
+    background: rgba(0, 0, 0, 0.48);
+    backdrop-filter: blur(10px);
     top: 0;
     bottom: 0;
     left: 0;
@@ -79,7 +80,7 @@ body.popup-open {
     p {
         margin-bottom: 0.7em;
     }
-    &.popup-form {
+    &.popup-form, &.popup-form-succefull {
         box-shadow: 3px 5px 24px rgba(45, 47, 64, 0.08);
         overflow: visible;
         .popup-title-wrap {
@@ -91,8 +92,54 @@ body.popup-open {
             overflow: visible;
         }
     }
+    &.popup-form-succefull {
+        
+    }
+}
+.popup-succefull-box {
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--clr-title);
+    .text-inner-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-shrink: 0;
+        justify-content: center;
+        min-height: 52rem;
+    }
+    .text-inner-title {
+        display: block;
+        font-size: 3.6rem;
+        line-height: (44/36);
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+    }
+    .action-inner-wrap {
+        display: block;
+        width: 100%;
+        flex-shrink: 0;
+    }
+    img {
+        display: block;
+        width: 10rem;
+        margin: 0 auto 16px auto;
+    }
+    .btn {
+        width: 432px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 .popup-form-box {
+    position: relative;
     .frm-row {
         margin: 0 auto;
         max-width: 528px;
@@ -130,6 +177,13 @@ body.popup-open {
     }
     .frm-field-message {
         margin-top: 9px;
+    }
+    .btn {
+        &[disabled], &.button-disabled {
+            background-color: #C9CBCE;
+            border-color: #C9CBCE;
+            color: #fff;
+        }
     }
 }
 .popup-info-box {
@@ -3158,6 +3212,14 @@ body.popup-open {
     }
 }
 @media (max-width: 479px) {
+    .popup-box {
+        &.popup-form, &.popup-form-succefull {
+            .popup-title-wrap {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
     .teams-tiles-box {
         .item-wrap {
             width: 100%;
@@ -3252,7 +3314,7 @@ body.popup-open {
 }
 @media (min-width: 1024px) {
     .popup-box {
-        &.popup-form {
+        &.popup-form, &.popup-form-succefull {
             padding: 6.4rem 4.8rem;
             width: 720px;
             border-radius: 24px;
@@ -3265,6 +3327,9 @@ body.popup-open {
                     margin: 0 0 8px 0;
                 }
             }
+        }
+        &.popup-form-succefull {
+            padding-top: 5.4rem;
         }
     }
     .popup-form-box {

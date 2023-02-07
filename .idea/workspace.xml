@@ -7,6 +7,7 @@
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STO.html" beforeDir="false" afterPath="$PROJECT_DIR$/STO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bounty.html" beforeDir="false" afterPath="$PROJECT_DIR$/bounty.html" afterDir="false" />
@@ -14,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cryptoaccounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/cryptoaccounts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
@@ -121,7 +123,7 @@
       <workItem from="1675227184651" duration="11000" />
       <workItem from="1675246938303" duration="3917000" />
       <workItem from="1675750621458" duration="5135000" />
-      <workItem from="1675766760133" duration="767000" />
+      <workItem from="1675766760133" duration="1628000" />
     </task>
     <servers />
   </component>
