@@ -155,7 +155,7 @@
         overflow: hidden;
         justify-content: flex-start;
         &:hover, &.active {
-            background: #DDDFE3;
+            background: #F0F2F6;
             border-radius: 4px;
             color: #000;
         }
@@ -222,7 +222,7 @@
         position: relative;
         overflow: hidden;
         &:hover, &.active {
-            background-color: #DDDFE3;
+            background-color: #F0F2F6;
             color: #000;
         }
     }
@@ -277,6 +277,84 @@
     [placeholder]:-moz-placeholder {color: #B8B8B8;}
     [placeholder]::-moz-placeholder {color: #B8B8B8;}
     [placeholder]:-ms-input-placeholder {color: #B8B8B8;}
+}
+.frm-field-panel {
+    display: flex;
+    .frm-field-select {
+        flex: 1;
+        border-radius: 0;
+        &:not(:first-child) {
+            .lbl-field-title {
+                //border-left: none;
+            }
+        }
+        &:not(:last-child) {
+            .lbl-field-title {
+                border-right: none;
+            }
+        }
+        &:first-child {
+            .lbl-field-title {
+                border-radius: 12px 0 0 12px;
+            }
+        }
+        &:last-child {
+            .lbl-field-title {
+                border-radius: 0 12px 12px 0;
+            }
+        }
+    }
+}
+.frm-field-select {
+    display: block;
+    position: relative;
+    flex-shrink: 0;
+    line-height: 1;
+    input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -999;
+        pointer-events: none;
+        margin: 0;padding: 0;
+        &:checked {
+            &~.lbl-field-title {
+                background-color: #F0F2F6;
+                border-color: #F0F2F6;
+                color: #1D1D1F;
+            }
+        }
+    }
+    .lbl-field-title {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        transition: all ease 0.2s;
+        border: 1px solid #dddfe3;
+        padding: 0 10px 0 1.9rem;
+        height: 5.6rem;
+        min-height: 44px;
+        color: #7D7E80;
+        cursor: pointer;
+        &:hover {
+            color: #1D1D1F;
+        }
+    }
+    .lbl-title {
+        display: block;
+        width: 100%;
+        flex-shrink: 0;
+        font-size: 16px;
+        line-height: 1.4;
+        color: inherit;
+        max-height: 2.8em;
+        position: relative;
+        overflow: hidden;
+    }
 }
 .frm-field-message {
     font-size: 16px;
@@ -342,7 +420,15 @@
         }
 	}
 }
-
+@media (max-width: 1023px) {
+    .frm-field-select {
+        .lbl-title {
+            font-size: 14px;
+            line-height: 1.2;
+            max-height: 2.4em;
+        }
+    }
+}
 @media (max-width: 479px) {
     .frm-main-button {
         display: block;

@@ -83,10 +83,19 @@ body.popup-open {
     &.popup-form, &.popup-form-succefull {
         box-shadow: 3px 5px 24px rgba(45, 47, 64, 0.08);
         overflow: visible;
+        .btn-action-ico {
+            &.ico-close-main {
+                top: 3.5rem;
+                right: 3.5rem;
+            }
+        }
         .popup-title-wrap {
             text-align: center;
             padding-left: 40px;
             padding-right: 40px;
+            .popup-title {
+                letter-spacing: -0.02em;
+            }
         }
         .popup-content-wrap {
             overflow: visible;
@@ -151,7 +160,7 @@ body.popup-open {
     }
     .frm-row-submit {
         margin: 0 auto;
-        max-width: 432px;
+        max-width: 374px;
         padding-top: 8px;
         .frm-field {
             margin-bottom: 12px;
@@ -163,10 +172,9 @@ body.popup-open {
             font-size: 14px;
             line-height: 1.4;
             color: var(--clr-title);
-            a {
-                &:not(:hover) {
-                    color: inherit;
-                }
+            &:last-child {
+                text-align: center;
+                padding-top: 0;
             }
         }
         .btn {
@@ -3214,9 +3222,15 @@ body.popup-open {
 @media (max-width: 479px) {
     .popup-box {
         &.popup-form, &.popup-form-succefull {
+            .btn-action-ico {
+                &.ico-close-main {
+                    top: 10px;
+                    right: 10px;
+                }
+            }
             .popup-title-wrap {
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }
