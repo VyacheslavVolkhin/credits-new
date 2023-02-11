@@ -1864,6 +1864,19 @@ body {
   overflow: hidden;
   padding: 4rem 3.2rem;
 }
+.item-tile-pitch-third .tile-legends {
+  display: block;
+  margin-top: 3.2rem;
+  margin-left: -15px;
+  margin-right: 0;
+}
+.item-tile-pitch-third .tile-legend {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.item-tile-pitch-third .tile-legend:last-child {
+  margin-bottom: 0;
+}
 .item-tile-pitch-third .tile-photo-wrap {
   padding-top: 16px;
   margin-left: auto;
@@ -1913,6 +1926,38 @@ body {
 }
 .item-tile-pitch-third .tile-action {
   padding-left: 25px;
+}
+.item-tile-pitch-third .tile-photo-wrap {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.item-tile-pitch-third .tile-photo {
+  display: block;
+  position: relative;
+}
+.item-tile-pitch-third .tile-photo-title {
+  display: block;
+  width: 25%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: -15px;
+  position: absolute;
+  top: 58%;
+  left: 0;
+}
+.item-tile-pitch-third .tile-photo-title.title02 {
+  left: 65%;
+  top: 22%;
+}
+.item-tile-pitch-third .tile-photo-title.title03 {
+  top: 86%;
+  left: 52%;
 }
 .item-tile-pitch-third ul {
   padding-left: 10px;
@@ -2830,11 +2875,14 @@ body {
 .item-tile-info-text .tile-ico {
   width: 72px;
   height: 72px;
-  margin: 0 0 3.2rem 0;
+  margin: 0 0 2rem 0;
 }
 .item-tile-info-text .tile-ico img {
   left: 0;
   margin-left: 0;
+}
+.item-tile-info-text .h6-title {
+  margin-bottom: 12px;
 }
 .item-tile-integration {
   display: block;
@@ -4683,6 +4731,29 @@ body {
   position: absolute;
   background: url(../img/icons/help.svg) center no-repeat;
   background-size: 100% auto;
+}
+.tile-legend {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  padding: 0 0 0 32px;
+  line-height: 1.4;
+}
+.tile-legend .tile-legend-color {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  margin-top: -10px;
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tile-legend .tile-legend-color img {
+  display: block;
+  width: 100%;
 }
 @media (max-width: 1399px) {
   .item-tile-view-mobile .tile-photo img,
