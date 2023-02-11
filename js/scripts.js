@@ -63,6 +63,17 @@ $(document).ready(function(){
             }
         });
     }
+    if (!!$('.main-menu-box.menu-top').offset()) {
+        var menuStickyTop = $('.wrap').offset().top + $('.main-menu-box.menu-top').outerHeight();
+        $(window).scroll(function () {
+            var menuWindowTop = $(window).scrollTop();
+            if (menuStickyTop < menuWindowTop) {
+                $('.wrap').addClass('menu-fixed');
+            } else {
+                $('.wrap').removeClass('menu-fixed');
+            }
+        });
+    }
 
 
     //popup block
