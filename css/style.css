@@ -3473,6 +3473,71 @@ body {
 .item-tile-overview-second p {
   margin-bottom: 0.8em;
 }
+.item-tile-overview-rows {
+  border-radius: 2.4rem;
+  background: #F0F2F6;
+  display: block;
+  position: relative;
+  min-height: 100%;
+  padding: 24px 3.2rem;
+  color: #575759;
+}
+.item-tile-overview-rows .tile-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0 0 2.4rem 0;
+  letter-spacing: -0.02em;
+  color: #1D1D1F;
+}
+.item-tile-overview-rows .tile-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  position: relative;
+  margin-bottom: 12px;
+}
+.item-tile-overview-rows .tile-row:last-child {
+  margin-bottom: 0;
+}
+.item-tile-overview-rows .tile-row .tile-ico {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.item-tile-overview-rows .tile-row .tile-ico ~ .tile-row-title {
+  padding-left: 40px;
+}
+.item-tile-overview-rows .tile-row-title {
+  width: 204px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 10px 0 0;
+}
+.item-tile-overview-rows .tile-row-title:last-child {
+  width: auto;
+  padding-right: 0;
+  -ms-flex: 1;
+      flex: 1;
+}
+.item-tile-overview-rows .tile-row-value {
+  -ms-flex: 1;
+      flex: 1;
+  font-size: 1.11111111em;
+  color: #000;
+}
+.item-tile-overview-rows .tile-help {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  margin-top: -12px;
+}
+.item-tile-overview-rows .tile-help ~ .tile-row-value {
+  padding-right: 10px;
+}
 .item-tile-overview {
   border-radius: 1.6rem;
   background: #F0F2F6;
@@ -4799,6 +4864,24 @@ body {
   }
 }
 @media (max-width: 1023px) {
+  .item-tile-overview-rows .tile-row {
+    display: block;
+  }
+  .item-tile-overview-rows .tile-row .tile-row-title {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .item-tile-overview-rows .tile-row .tile-row-value {
+    display: block;
+  }
+  .item-tile-overview-rows .tile-row .tile-help {
+    right: 0;
+  }
+  .item-tile-overview-rows .tile-row .tile-help ~ .tile-row-title,
+  .item-tile-overview-rows .tile-row .tile-help ~ .tile-row-value {
+    padding-right: 30px;
+  }
   .item-tile-total {
     display: block;
     text-align: center;
@@ -6987,29 +7070,52 @@ body.popup-open {
 .main-news-box .more-wrap .btn.button-border:not(:hover) {
   color: var(--clr-att);
 }
-.main-overview-tiles-box {
+.main-overview-tiles-box,
+.main-overview-inner-box {
   padding: var(--main-padding) 0 6.6rem 0;
 }
-.main-overview-tiles-box .items-wrap {
+.main-overview-tiles-box .items-wrap,
+.main-overview-inner-box .items-wrap {
   margin: 0 -1.6rem -3.2rem -1.6rem;
 }
-.main-overview-tiles-box .item-wrap {
+.main-overview-tiles-box .item-wrap,
+.main-overview-inner-box .item-wrap {
   width: 50%;
   padding: 0 1.6rem;
   margin-bottom: 3.2rem;
 }
-.main-overview-tiles-box .action-wrap {
+.main-overview-tiles-box .action-wrap,
+.main-overview-inner-box .action-wrap {
   padding-top: 4.8rem;
   text-align: center;
+  color: #7D7E80;
 }
-.main-overview-tiles-box .main-title-wrap {
+.main-overview-tiles-box .action-wrap p,
+.main-overview-inner-box .action-wrap p {
+  margin-bottom: 12px;
+}
+.main-overview-tiles-box .main-title-wrap,
+.main-overview-inner-box .main-title-wrap {
   text-align: left;
   margin-bottom: 4.8rem;
   font-weight: 600;
+  color: #575759;
+}
+.main-overview-tiles-box .main-title-wrap:not(.text-body-large),
+.main-overview-inner-box .main-title-wrap:not(.text-body-large) {
   font-size: 2.8rem;
   line-height: 140%;
   letter-spacing: -0.03em;
-  color: #575759;
+}
+.main-overview-inner-box .main-title-wrap {
+  color: #7D7E80;
+  font-weight: 500;
+  max-width: 31.25em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.main-overview-inner-box .action-wrap .btn {
+  min-width: 40rem;
 }
 .main-tiles-overview-second-box {
   padding-top: var(--main-padding);
@@ -8010,7 +8116,8 @@ body.popup-open {
   .inner-head-box.pb-max,
   .main-info-tiles-box.section-second,
   .main-products-scheme-box,
-  .main-overview-tiles-box {
+  .main-overview-tiles-box,
+  .main-overview-inner-box {
     padding-bottom: var(--main-padding);
   }
   .main-video-box,
@@ -8258,7 +8365,8 @@ body.popup-open {
   .main-news-box .item-wrap {
     width: 100%;
   }
-  .main-overview-tiles-box .item-wrap {
+  .main-overview-tiles-box .item-wrap,
+  .main-overview-inner-box .item-wrap {
     width: 100%;
   }
   .main-about-tiles-box .box-inner-wrap {

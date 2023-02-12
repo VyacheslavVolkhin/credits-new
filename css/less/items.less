@@ -1752,6 +1752,66 @@
         margin-bottom: 0.8em;
     }
 }
+.item-tile-overview-rows {
+    border-radius: 2.4rem;
+    background: #F0F2F6;
+    display: block;
+    position: relative;
+    min-height: 100%;
+    padding: 24px 3.2rem;
+    color: #575759;
+    .tile-title {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 0 0 2.4rem 0;
+        letter-spacing: -0.02em;
+        color: #1D1D1F;
+    }
+    .tile-row {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .tile-ico {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &~.tile-row-title {
+                padding-left: 40px;
+            }
+        }
+    }
+    .tile-row-title {
+        width: 204px;
+        flex-shrink: 0;
+        padding: 0 10px 0 0;
+        &:last-child {
+            width: auto;
+            padding-right: 0;
+            flex: 1;
+        }
+    }
+    .tile-row-value {
+        flex: 1;
+        font-size: (20/18em);
+        color: #000;
+    }
+    .tile-help {
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        margin-top: -12px;
+        &~.tile-row-value {
+            padding-right: 10px;
+        }
+    }
+}
 .item-tile-overview {
     border-radius: 1.6rem;
     background: #F0F2F6;
@@ -2943,6 +3003,25 @@
     }
 }
 @media (max-width: 1023px) {
+    .item-tile-overview-rows {
+        .tile-row {
+            display: block;
+            .tile-row-title {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 5px;
+            }
+            .tile-row-value {
+                display: block;
+            }
+            .tile-help {
+                right: 0;
+                &~.tile-row-title, &~.tile-row-value {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
     .item-tile-total {
         display: block;
         text-align: center;
