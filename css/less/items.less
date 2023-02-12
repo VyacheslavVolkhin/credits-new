@@ -2919,7 +2919,12 @@
     height: 24px;
     position: relative;
     cursor: pointer;
-    &:before {
+    &.active {
+        .tile-help-content-wrap {
+            display: block;
+        }
+    }
+    &:before, .help-ico {
         content: "";
         display: block;
         top: 0;
@@ -2929,6 +2934,35 @@
         position: absolute;
         background: url(../img/icons/help.svg) center no-repeat;
         background-size: 100% auto;
+    }
+    .tile-help-content-wrap {
+        display: none;
+        animation: fadein ease 0.2s;
+        width: 404px;
+        max-width: 100vw;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 999;
+        border-radius: 1.6rem;
+        box-shadow: 3px 5px 24px rgba(45, 47, 64, 0.08);
+        background-color: #fff;
+        padding: 20px;
+        color: #575759;
+        margin-top: 10px;
+    }
+    .tile-help-title {
+        display: block;
+        margin: 0 0 2.7rem 0;
+        padding-right: 3rem;
+        letter-spacing: -0.02em;
+        color: var(--clr-title);
+    }
+    .btn-action-ico.ico-close-main {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
     }
 }
 .tile-legend {

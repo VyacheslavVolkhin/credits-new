@@ -35,6 +35,17 @@ $(document).ready(function(){
         $('.popup-outer-box').removeClass('active');
         return false;
     })
+    
+    
+    //help
+    $('.js-help .help-ico').hover(function() {
+        $('.js-help.active').removeClass('active');
+        $(this).parent('.js-help').addClass('active');
+    })
+    $('.js-help-close').on('click', function() {
+        $(this).parents('.js-help').removeClass('active');
+        return false;
+    })
 
 
     //item-tile-video
