@@ -2900,14 +2900,19 @@
 .elm-overlay {
     display: none;
     animation: fadein ease 0.2s;
-    background: fade(#000, 80);
+    background: fade(#000, 20);
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 120;
+    z-index: 998;
     &.active {
+        display: block;
+    }
+}
+.help-open {
+    .elm-overlay {
         display: block;
     }
 }

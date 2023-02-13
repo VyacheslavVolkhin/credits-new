@@ -4763,15 +4763,18 @@ body {
 .elm-overlay {
   display: none;
   animation: fadein ease 0.2s;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 120;
+  z-index: 998;
 }
 .elm-overlay.active {
+  display: block;
+}
+.help-open .elm-overlay {
   display: block;
 }
 .tile-help,

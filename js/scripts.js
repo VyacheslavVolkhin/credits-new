@@ -38,12 +38,19 @@ $(document).ready(function(){
     
     
     //help
-    $('.js-help .help-ico').hover(function() {
+    $('.js-help .help-ico').on('click', function() {
         $('.js-help.active').removeClass('active');
         $(this).parent('.js-help').addClass('active');
+        $('body').addClass('help-open');
     })
     $('.js-help-close').on('click', function() {
         $(this).parents('.js-help').removeClass('active');
+        $('body').removeClass('help-open');
+        return false;
+    })
+    $('.elm-overlay').on('click', function() {
+        $('.js-help.active').removeClass('active');
+        $('body').removeClass('help-open');
         return false;
     })
 
