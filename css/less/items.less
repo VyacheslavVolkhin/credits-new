@@ -1,6 +1,93 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-hightlights {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    border-radius: 2.4rem;
+    background-color: #fff;
+    padding: 4.8rem 4rem;
+    color: #575759;
+    .tile-inner-wrap {
+        display: block;
+        flex: 1;
+    }
+    .tile-action-wrap {
+        margin-top: 1.9rem;
+        padding-top: 2rem;
+        border-top: 1px solid #DDDFE3;
+        flex-shrink: 0;
+        display: block;
+    }
+    .tile-title {
+        margin: 0 0 2.4rem 0;
+        color: var(--clr-title);
+        .title-gradient {
+            background-image: linear-gradient(89.86deg, #0039AD 0.12%, #3678FF 82.24%);
+        }
+    }
+    .tile-info {
+        margin-bottom: 2rem;
+        position: relative;
+        padding: 0 32px 0 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .tile-info-title {
+        font-size: 16px;
+        line-height: 1.4;
+        color: #7D7E80;
+        font-weight: 500;
+        margin: 0 0 4px 0;
+    }
+    .tile-help {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -12px;
+    }
+    p, ul {
+        margin-bottom: 4.8rem;
+    }
+    li {
+        margin-bottom: 2.4rem;
+        padding-left: 4rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: "";
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            position: absolute;
+            top: 0.7em;
+            left: 1.3rem;
+            margin-top: -0.4rem;
+            border-radius: 50%;
+            background-color: currentColor;
+        }
+    }
+    .main-actions-wrap {
+        justify-content: flex-start;
+        margin: 0 -2.4rem  -10px 0;
+        padding-top: 4.8rem;
+        .button-wrap {
+            padding: 0 2.4rem 0 0;
+            margin: 0 0 10px 0;
+        }
+        .action-wrap {
+            padding: 0 2.4rem 0 0 0;
+            margin: 0 0 10px 0;
+        }
+        .btn {
+            min-width: 32rem;
+        }
+    }
+}
 .item-tile-team {
     color: #575759;
     .tile-photo-wrap {
@@ -2955,6 +3042,7 @@
         padding: 20px;
         color: #575759;
         margin-top: 10px;
+        max-width: 85vw;
     }
     .tile-help-title {
         display: block;
