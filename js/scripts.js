@@ -225,6 +225,57 @@ $(document).ready(function(){
         return false;
     })
     
+    
+    //main menu box scroll
+    if ($('.main-menu-box').offset()) {
+        $('.main-menu-box').each(function() {
+            let currentElement = $(this).find('.menu');
+            let currentElementRightPos = (currentElement.find('li:last').offset().left)+currentElement.find('li:last').width();
+            let currentElementInnerWidth = (currentElement.width()+64);
+            let currentElementLeft = currentElement.scrollLeft();
+            if (currentElementLeft > 0) {
+                $(this).find('.button-menu-prev').addClass('active');
+            } else {
+                $(this).find('.button-menu-prev').removeClass('active');
+            }
+            if (currentElementRightPos >= currentElementInnerWidth) {
+                $(this).find('.button-menu-next').addClass('active');
+            } else {
+                $(this).find('.button-menu-next').removeClass('active');
+            }
+        })
+        $('.main-menu-box .menu').scroll(function() {
+            let currentElement = $(this);
+            let currentElementRightPos = (currentElement.find('li:last').offset().left)+currentElement.find('li:last').width();
+            let currentElementInnerWidth = (currentElement.width()+64);
+            let currentElementLeft = currentElement.scrollLeft();
+            if (currentElementLeft > 0) {
+                $(this).parents('.main-menu-box').find('.button-menu-prev').addClass('active');
+            } else {
+                $(this).parents('.main-menu-box').find('.button-menu-prev').removeClass('active');
+            }
+            if (currentElementRightPos >= currentElementInnerWidth) {
+                $(this).parents('.main-menu-box').find('.button-menu-next').addClass('active');
+            } else {
+                $(this).parents('.main-menu-box').find('.button-menu-next').removeClass('active');
+            }
+        })
+        $('.main-menu-box .button-menu-prev').on('click', function() {
+            let currentElement = $(this).parents('.main-menu-box').find('.menu');
+            let currentElementLeft = currentElement.scrollLeft() - 300;
+            console.log(currentElementLeft)
+            currentElement.animate({scrollLeft: currentElementLeft}, 800);
+            return false;
+        })
+        $('.main-menu-box .button-menu-next').on('click', function() {
+            let currentElement = $(this).parents('.main-menu-box').find('.menu');
+            let currentElementLeft = currentElement.scrollLeft() + 300;
+            console.log(currentElementLeft)
+            currentElement.animate({scrollLeft: currentElementLeft}, 800);
+            return false;
+        })
+    }
+    
 });
 
 
