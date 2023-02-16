@@ -1,6 +1,31 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.inner-menu-box {
+    text-align: center;
+    color: #4E4E4E;
+    background-color: #fff;
+    padding: 2.4rem 0;
+    &.menu-border {
+        border-bottom: 1px solid #DDDFE3;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    li {
+        flex-shrink: 0;
+    }
+    a {
+        display: block;
+        padding: 1.4rem 5.1rem;
+        white-space: nowrap;
+        &:not(:hover) {
+            color: inherit;
+        }
+    }
+}
 .main-highlights-box {
     padding: 9.2rem 0;
     .main-title-wrap {
@@ -2776,6 +2801,11 @@ body.popup-open {
     }
 }
 @media (max-width: 767px) {
+    .inner-menu-box {
+        a {
+            padding: 1.4rem 3rem;
+        }
+    }
     .main-highlights-box {
         .item-wrap {
             width: 100%;
