@@ -2919,6 +2919,19 @@
     text-decoration: none;
     line-height: 1;
     transform: translateZ(0);
+    &.photo-video {
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: fade(#000, 50) url(../img/icons/play-second.svg) center no-repeat;
+            background-size: 3.2rem auto;
+        }
+    }
     &:before {
         content: "";
         display: none;

@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/new-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/new-overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/screen13.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/screen13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/new-overview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <workItem from="1675246938303" duration="3917000" />
       <workItem from="1675750621458" duration="5135000" />
       <workItem from="1675766760133" duration="13117000" />
-      <workItem from="1676209857374" duration="14042000" />
+      <workItem from="1676209857374" duration="15877000" />
     </task>
     <servers />
   </component>
