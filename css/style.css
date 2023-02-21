@@ -8533,8 +8533,7 @@ body.popup-open {
 @media (max-width: 767px) {
   .popup-box.popup-how-it-works {
     width: 375px;
-    padding: 32px 20px;
-    border-radius: 0;
+    padding: 32px 20px 0 20px;
   }
   .popup-box.popup-how-it-works .popup-title-wrap {
     padding: 0 0 24px 0;
@@ -8544,6 +8543,9 @@ body.popup-open {
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;
+  }
+  .popup-box.popup-how-it-works .popup-content-wrap {
+    padding-bottom: 32px;
   }
   .popup-box.popup-how-it-works .btn-action-ico.ico-close-main {
     top: 15px;
