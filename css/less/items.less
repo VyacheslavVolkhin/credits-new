@@ -1,6 +1,57 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-popup {
+    display: block;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    background: #F0F2F6;
+    border-radius: 24px;
+    padding: 20px 20px 40px 20px;
+    font-size: 18px;
+    line-height: (26/18);
+    font-weight: 500;
+    color: #575759;
+    .tile-subtitle {
+        display: block;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: #A3A4A7;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    .tile-title {
+        display: block;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: #121214;
+        margin: 0;
+        min-height: 2.4em;
+    }
+    .tile-title-wrap {
+        padding-bottom: 19px;
+        border-bottom: 1px solid #DDDFE3;
+        margin-bottom: 20px;
+    }
+    .tile-text {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    } 
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
 .item-tile-hightlights {
     display: flex;
     flex-direction: column;
@@ -3143,6 +3194,36 @@
     }
 }
 @media (max-width: 1023px) {
+    .item-tile-popup {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 20px 16px;
+        border-radius: 16px;
+        .tile-title-wrap {
+        }
+        .tile-title {
+            font-size: 18px;
+            line-height: 24px;
+            min-height: 48px;
+        }
+        .tile-subtitle {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .tile-text {
+            margin-bottom: 16px;
+            p {
+                margin-bottom: 8px;
+            }
+        }
+        .btn {
+            height: 40px;
+            font-size: 14px;
+            border-radius: 12px;
+            min-width: 0;
+            padding: 0 20px;
+        }
+    }
     .item-tile-overview-rows {
         .tile-row {
             display: block;
@@ -3245,6 +3326,20 @@
     }
 }
 @media (max-width: 767px) {
+    .item-tile-popup {
+        .tile-title-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            //border-bottom: none;
+        }
+        .tile-title {
+            min-height: 0;
+        }
+    }
     .item-tile-integration {
         .tile-logo-wrap {
             padding-bottom: 16px;
