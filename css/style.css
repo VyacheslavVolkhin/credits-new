@@ -11792,7 +11792,7 @@ select::-ms-expand {
   margin: 0;
 }
 .item-tile-scale-info .tile-row {
-  margin-bottom: 0.8em;
+  margin-bottom: 1.2em;
 }
 .item-tile-scale-info .tile-row:last-child {
   margin-bottom: 0;
@@ -12558,8 +12558,10 @@ select::-ms-expand {
   .item-tile-campaigns-main .btn,
   .item-tile-campaigns .btn {
     width: auto;
-    font-size: 16px;
-    padding: 0 24px;
+    font-size: 18px;
+    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
     min-width: 0;
   }
   .main-video-list-box .item-wrap {
@@ -12581,6 +12583,9 @@ select::-ms-expand {
   }
 }
 @media (max-width: 639px) {
+  .title-mobile-large {
+    font-size: 32px;
+  }
   .item-tile-campaigns-main {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -12602,6 +12607,21 @@ select::-ms-expand {
     padding: 0;
     width: 40rem;
     max-width: 100%;
+  }
+  .main-services-full-box.section-small .action-wrap .btn {
+    height: 56px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .main-pitch-middle-box .action-wrap {
+    text-align: center;
+  }
+  .main-pitch-middle-box .action-wrap .btn {
+    padding: 12px 24px;
+  }
+  .main-pitch-middle-box .h3-title {
+    font-size: 4rem;
+    margin-bottom: 24px;
   }
   .header-panel-box .panel-title {
     width: 100%;
