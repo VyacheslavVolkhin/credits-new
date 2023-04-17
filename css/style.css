@@ -12713,6 +12713,9 @@ select::-ms-expand {
     width: 40rem;
     max-width: 100%;
   }
+  .payments-tiles-box .item-wrap {
+    width: 50%;
+  }
   .main-services-full-box.section-small .action-wrap .btn {
     height: 56px;
     padding-left: 32px;
@@ -12755,6 +12758,18 @@ select::-ms-expand {
 @media (max-width: 479px) {
   .item-tile-service-full.tile-third {
     padding: 4.8rem 3.2rem;
+  }
+  .payments-tiles-box .item-wrap {
+    width: 100%;
+  }
+  .payments-tiles-box .info-inner-wrap {
+    text-align: center;
+  }
+  .payments-tiles-box .info-inner-wrap .info-title {
+    padding: 1rem;
+  }
+  .payments-tiles-box .info-inner-wrap .info-action {
+    padding: 0 1rem;
   }
   .main-giveaways-box .item-wrap {
     width: 100%;
