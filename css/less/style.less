@@ -1053,7 +1053,7 @@
 
 
 
-/* new pitch page  */
+/* new pitch page 33  */
 .btn {
     &.button-second {
         border-color: #C8F808;
@@ -1064,6 +1064,48 @@
             background-color: #C8F808+#222;
             color: #000;
         }
+    }
+}
+.item-tile-payment-inner {
+    display: block;
+    position: relative;
+    min-height: 100%;
+    border-radius: 16px;
+    padding: 4rem 3.2rem;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 500;
+    background-color: #fff;
+    color: #575759;
+    .tile-title-wrap {
+        display: flex;
+        position: relative;
+        min-height: 32px;
+        margin-bottom: 12px;
+        align-items: center;
+        padding: 0 0 0 40px;
+        .tile-ico {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .tile-ico-title {
+            font-size: 2.8rem;
+            line-height: (32/28);
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
+    }
+    .tile-title {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        font-weight: 600;
+        color: #000000;
+        letter-spacing: -0.02em;
+        margin: 0 0 2.4rem 0;
     }
 }
 .item-tile-giveaway {
@@ -1496,6 +1538,61 @@
 .section-1000 {
     .inner-wrap {
         max-width: 1052px;
+    }
+}
+.payments-tiles-box {
+    padding: 8rem 0;
+    &.section-bg {
+        background-color: #F0F2F6;
+    }
+    .main-title-wrap {
+        margin-bottom: 3.2rem;
+        font-size: 2.8rem;
+        line-height: 1.4;
+        .h2-title {
+            margin-bottom: 0.2em;
+        }
+        p {
+            color: #575759;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: (880/28em);
+        }
+    }
+    .items-wrap {
+        margin: 0 -1.2rem  -2.4rem  -1.2rem;
+    }
+    .item-wrap {
+        padding: 0 1.2rem;
+        margin-bottom: 2.4rem;
+        width: 33.33%;
+    }
+    .info-inner-wrap {
+        margin: 4.8rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .info-title {
+            font-size: 2rem;
+            line-height: (28/20);
+            font-weight: 600;
+            color: #303031;
+            margin: 0;
+            padding: 0 3.2rem 0 0;
+            width: 26.4rem;
+            max-width: 100%;
+            flex-shrink: 0;
+        }
+        .info-action {
+            flex-shrink: 0;
+            padding-left: 3.2rem;
+            .btn {
+                min-width: 32rem;
+                font-size: 18px;
+                line-height: 1.8;
+            }
+        }
     }
 }
 .main-text-box,
