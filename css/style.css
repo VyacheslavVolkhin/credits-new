@@ -11628,10 +11628,7 @@ select::-ms-expand {
   display: none;
 }
 .item-tile-team.tile-small .tile-help .help-ico span {
-  color: var(--clr-att);
-}
-.item-tile-team.tile-small .tile-help .help-ico span:hover {
-  color: var(--clr-att-second);
+  color: #7D7E80;
 }
 .item-tile-payment-inner {
   display: block;
