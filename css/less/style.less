@@ -1053,7 +1053,7 @@
 
 
 
-/* new pitch page 33  */
+/* new pitch page   */
 .btn {
     &.button-second {
         border-color: #C8F808;
@@ -1066,42 +1066,141 @@
         }
     }
 }
+.item-tile-team {
+    &.tile-small {
+        .tile-photo {
+            border-radius: 16px;
+            &:before {
+                padding-top: 100%;
+            }
+        }
+        .tile-info-wrap {
+            padding: 16px 0 0 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #575759;
+        }
+        .tile-title {
+            display: block;
+            font-size: 20px;
+            line-height: (24/20);
+            letter-spacing: -0.02em;
+            font-weight: 600;
+            color: #000408;
+            margin: 0 0 8px 0;
+            &+.tile-subtitle {
+                margin-top: -4px;
+            }
+        }
+        .tile-subtitle {
+            font-size: 16px;
+            line-height: (20/16);
+            font-weight: 600;
+            color: #575759;
+            margin-bottom: 8px;
+        }
+        .tile-text {
+            display: block;
+            position: relative;
+            height: 40px;
+            font-weight: 500;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .tile-text-inner {
+            height: 40px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-action-ico.ico-soc {
+            width: 28px;
+            height: 28px;
+        }
+        .tile-help {
+            height: 20px;
+            width: auto;
+            line-height: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            float: left;
+            background-color: #F0F2F6;
+            &:before {
+                display: none;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 100%;
+                left: auto;
+                width: 80px;
+                background: linear-gradient(to right, fade(#000, 0), #F0F2F6);
+            }
+            .help-ico {
+                color: inherit;
+                width: auto;
+                height: 20px;
+                line-height: 20px;
+                white-space: nowrap;
+                border: none;
+                border-radius: 0;
+                position: static;
+                background: none;
+                &:before {
+                    display: none;
+                }
+                span {
+                    color: #7D7E80;
+                }
+            }
+        }
+    }
+}
 .item-tile-payment-inner {
     display: block;
     position: relative;
-    min-height: 100%;
+    eight: 100%;
+    min-height: 30rem;
     border-radius: 16px;
-    padding: 4rem 3.2rem;
+    padding: 3.2rem 2.8rem;
     font-size: 2rem;
-    line-height: 1.4;
-    font-weight: 500;
+    line-height: (24/20);
+    font-weight: 400;
     background-color: #fff;
     color: #575759;
     .tile-title-wrap {
         display: flex;
         position: relative;
-        min-height: 32px;
-        margin-bottom: 12px;
+        min-height: 28px;
+        margin-bottom: 16px;
         align-items: center;
         padding: 0 0 0 40px;
         .tile-ico {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             position: absolute;
             top: 0;
             left: 0;
         }
         .tile-ico-title {
-            font-size: 2.8rem;
-            line-height: (32/28);
+            font-size: 2.4rem;
+            line-height: (24/28);
             font-weight: 400;
             color: #000000;
             margin: 0;
+            &.title-main {
+                font-size: 2.8rem;
+                line-height: 1;
+            }
         }
     }
     .tile-title {
-        font-size: 2.8rem;
-        line-height: 3.4rem;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
         font-weight: 600;
         color: #000000;
         letter-spacing: -0.02em;
@@ -1540,6 +1639,39 @@
         max-width: 1052px;
     }
 }
+.main-teams-box {
+    background-color: #F0F2F6;
+    padding: 8rem 0;
+    .main-title-wrap {
+        margin-bottom: 3.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4.8rem;
+        &:first-child {
+            margin-top: 0;
+        }
+        p {
+            max-width: (560/24em);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .h3-title, .h4-title {
+            margin-bottom: 12px;
+            margin-top: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .items-wrap {
+        margin: 0 -1.2rem  -4.8rem  -1.2rem;
+    }
+    .item-wrap {
+        width: 25%;
+        padding: 0 1.2rem;
+        margin-bottom: 4.8rem;
+    }
+}
 .payments-tiles-box {
     padding: 8rem 0;
     &.section-bg {
@@ -1547,24 +1679,34 @@
     }
     .main-title-wrap {
         margin-bottom: 3.2rem;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         line-height: 1.4;
-        .h2-title {
+        .h2-title, .h3-title {
             margin-bottom: 0.2em;
         }
         p {
             color: #575759;
             margin-left: auto;
             margin-right: auto;
-            max-width: (880/28em);
+            max-width: (840/24em);
         }
     }
     .items-wrap {
-        margin: 0 -1.2rem  -2.4rem  -1.2rem;
+        margin: 0 -8px  -16px  -8px;
+    }
+    .action-wrap {
+        text-align: center;
+        margin-top: 3.2rem;
+        .btn {
+            min-width: 32rem;
+            font-size: 18px;
+            line-height: 1.8;
+            height: 5.6rem;
+        }
     }
     .item-wrap {
-        padding: 0 1.2rem;
-        margin-bottom: 2.4rem;
+        padding: 0 8px;
+        margin-bottom: 16px;
         width: 33.33%;
     }
     .info-inner-wrap {
@@ -1914,6 +2056,11 @@
             width: 33.33%;
         }
     }
+    .main-teams-box {
+        .item-wrap {
+            width: 50%;
+        }
+    }
     .scale-box {
         .item-wrap {
             &:first-child {
@@ -1970,6 +2117,9 @@
 @media (max-width: 639px) {
     .title-mobile-large {
         font-size: 32px;
+        &.h4-title {
+            font-size: 24px;
+        }
     }
     .item-tile-campaigns-main,
     .item-tile-campaigns {
@@ -2074,6 +2224,11 @@
             }
         }
     }
+    .main-teams-box {
+        .item-wrap {
+            width: 100%;
+        }
+    }
     .main-giveaways-box {
         .item-wrap {
             width: 100%;
@@ -2107,6 +2262,22 @@
                 .tile-help .tile-help-content-wrap {
                     right: 0;
                     margin: 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+    .main-teams-box {
+        .item-wrap {
+            &:nth-child(2n+1) {
+                .item-tile-team {
+                    .tile-help {
+                        .tile-help-content-wrap {
+                            right: auto;
+                            left: -80px;
+                        }
+                    }
                 }
             }
         }
@@ -2200,6 +2371,20 @@
                 letter-spacing: -0.02em;
                 font-weight: 600;
                 margin-bottom: 2.4rem;
+            }
+        }
+    }
+    .main-teams-box {
+        .item-wrap {
+            &:nth-child(4n+1) {
+                .item-tile-team {
+                    .tile-help {
+                        .tile-help-content-wrap {
+                            right: auto;
+                            left: -80px;
+                        }
+                    }
+                }
             }
         }
     }
